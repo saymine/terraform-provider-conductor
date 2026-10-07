@@ -74,6 +74,7 @@ func (p *ConductorProvider) Resources(ctx context.Context) []func() tfresource.R
 	return []func() tfresource.Resource{
 		NewTaskDefResource,
 		NewWorkflowDefResource,
+		NewScheduleResource,
 	}
 }
 
